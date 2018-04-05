@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Mancaresti</string>
+    <string name="category_burger">Burgers</string>
+    <string name="category_pizza">Pizza</string>
+    <string name="category_oriental">Oriental</string>
+    <string name="category_fine">Fine Dining</string>
+    <string name="restDesc">Image of restaurant</string>
+    <string name="circus">Circus Pub</string>
+    <string name="circusDesc">Burgarrii</string>
+    <string name="placeholder_name">Name</string>
+    <string name="placeholder_description">Description</string>
+
+</resources>
