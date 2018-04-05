@@ -34,9 +34,7 @@ public class OrientalFragment extends Fragment {
         restaurants.add(new Restaurant("Long Xuan", "Chinese Food", R.drawable.ic_directions_white_24dp));
 
 
-
-
-        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorAccent);
+        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorOriental);
         ListView listView = rootView.findViewById(R.id.foodList);
         listView.setAdapter(adapter);
         return rootView;

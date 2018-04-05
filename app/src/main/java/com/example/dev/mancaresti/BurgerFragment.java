@@ -21,18 +21,18 @@ public class BurgerFragment extends Fragment{
 
         // Create list of Burger Restaurants
         final ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Vivo", "Fusion Food Bar", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Modelier", "Burger Joint", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Switch.eat", "Street Food Style", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Vacamuuu", "Freshest Cuts", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Red Angus Steakhouse", "Taste Australia", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Osho", "Best Steak in Town", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Buffalo Baz", "Baz Bistro and Lounge", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Burger Van", "Food Truck", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Circus", "Best Burgers", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Simbio", "Gastrourban Bar", R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant("Vivo", "Fusion Food Bar", R.drawable.vivo));
+        restaurants.add(new Restaurant("Modelier", "Burger Joint", R.drawable.modelier));
+        restaurants.add(new Restaurant("Switch.eat", "Street Food Style", R.drawable.switcheat));
+        restaurants.add(new Restaurant("Vacamuuu", "Freshest Cuts", R.drawable.vacamuuu));
+        restaurants.add(new Restaurant("Red Angus Steakhouse", "Taste Australia", R.drawable.redangus));
+        restaurants.add(new Restaurant("Osho", "Best Steak in Town", R.drawable.osho));
+        restaurants.add(new Restaurant("Buffalo Baz", "Baz Bistro and Lounge", R.drawable.buffalobaz));
+        restaurants.add(new Restaurant("Burger Van", "Food Truck", R.drawable.burgervan));
+        restaurants.add(new Restaurant("Circus", "Best Burgers", R.drawable.modelier));
+        restaurants.add(new Restaurant("Simbio", "Gastrourban Bar", R.drawable.simbio));
 
-        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorAccent);
+        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorBurger);
         ListView listView = rootView.findViewById(R.id.foodList);
         listView.setAdapter(adapter);
         return rootView;

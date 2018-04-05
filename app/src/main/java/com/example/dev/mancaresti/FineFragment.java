@@ -35,7 +35,7 @@ public class FineFragment extends Fragment{
         restaurants.add(new Restaurant("Resto Aperto", "Padano Pizza", R.drawable.ic_directions_white_24dp));
         restaurants.add(new Restaurant("NOR", "Sky Casual Restaurant", R.drawable.ic_directions_white_24dp));
 
-        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorAccent);
+        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorFine);
         ListView listView = rootView.findViewById(R.id.foodList);
         listView.setAdapter(adapter);
         return rootView;

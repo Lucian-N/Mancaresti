@@ -32,10 +32,7 @@ public class PizzaFragment extends Fragment{
         restaurants.add(new Restaurant("Trenta", "Fast Food", R.drawable.ic_directions_white_24dp));
 
 
-
-
-
-        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorAccent);
+        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorPizza);
         ListView listView = rootView.findViewById(R.id.foodList);
         listView.setAdapter(adapter);
         return rootView;

@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackGround">#FBF5F3</color>
+    <color name="colorBurger">#4B409E</color>
+    <color name="colorFine">#000022</color>
+    <color name="colorOriental">#DE3C4B</color>
+    <color name="colorPizza">#C42847</color>
 </resources>
