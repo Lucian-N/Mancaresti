@@ -29,9 +29,8 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
-        View restaurantListView = convertView;
-        if (restaurantListView == null ) {
-            restaurantListView = LayoutInflater.from(getContext()).inflate(R.layout.restaurant_unit, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.restaurant_unit, parent, false);
         }
 
         // Get restaurant at list position
@@ -39,13 +38,13 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
 
         // Find respective resource files to update from xml
         // Update restaurant information with name, description and image
-        TextView restaurantName = restaurantListView.findViewById(R.id.restaurantName);
+        TextView restaurantName = convertView.findViewById(R.id.restaurantName);
         restaurantName.setText(currentRestaurant.getRestaurantName());
 
-        TextView restaurantDescription = restaurantListView.findViewById(R.id.restaurantDescription);
+        TextView restaurantDescription = convertView.findViewById(R.id.restaurantDescription);
         restaurantDescription.setText(currentRestaurant.getRestaurantDescription());
 
-        ImageView restaurantImage = restaurantListView.findViewById(R.id.restaurantImage);
+        ImageView restaurantImage = convertView.findViewById(R.id.restaurantImage);
         // Checks for an existing image
         if (currentRestaurant.imageExists()) {
             restaurantImage.setImageResource(currentRestaurant.getRestaurantImage());
@@ -54,11 +53,10 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
         else
             restaurantImage.setVisibility(View.GONE);
 
-        LinearLayout textContainer =restaurantListView.findViewById(R.id.restaurantContainer);
+        LinearLayout textContainer = convertView.findViewById(R.id.restaurantContainer);
         int color = ContextCompat.getColor(getContext(),backgroundColor);
         textContainer.setBackgroundColor(color);
 
-
-        return restaurantListView;
+        return convertView;
     }
 }

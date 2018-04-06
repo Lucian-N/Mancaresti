@@ -21,16 +21,16 @@ public class BurgerFragment extends Fragment{
 
         // Create list of Burger Restaurants
         final ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Vivo", "Fusion Food Bar", R.drawable.vivo));
-        restaurants.add(new Restaurant("Modelier", "Burger Joint", R.drawable.modelier));
-        restaurants.add(new Restaurant("Switch.eat", "Street Food Style", R.drawable.switcheat));
-        restaurants.add(new Restaurant("Vacamuuu", "Freshest Cuts", R.drawable.vacamuuu));
-        restaurants.add(new Restaurant("Red Angus Steakhouse", "Taste Australia", R.drawable.redangus));
-        restaurants.add(new Restaurant("Osho", "Best Steak in Town", R.drawable.osho));
-        restaurants.add(new Restaurant("Buffalo Baz", "Baz Bistro and Lounge", R.drawable.buffalobaz));
-        restaurants.add(new Restaurant("Burger Van", "Food Truck", R.drawable.burgervan));
-        restaurants.add(new Restaurant("Circus", "Best Burgers", R.drawable.modelier));
-        restaurants.add(new Restaurant("Simbio", "Gastrourban Bar", R.drawable.simbio));
+        restaurants.add(new Restaurant(getString(R.string.restnameone), getString(R.string.restdescone), R.drawable.vivo));
+        restaurants.add(new Restaurant(getString(R.string.restnametwo), getString(R.string.testdesctwo), R.drawable.modelier));
+        restaurants.add(new Restaurant(getString(R.string.restnamethree), getString(R.string.restdescthree), R.drawable.switcheat));
+        restaurants.add(new Restaurant(getString(R.string.restnamefour), getString(R.string.restdescfour), R.drawable.vacamuuu));
+        restaurants.add(new Restaurant(getString(R.string.restnamefive), getString(R.string.restdescfive), R.drawable.redangus));
+        restaurants.add(new Restaurant(getString(R.string.restnamesix), getString(R.string.restdescsix), R.drawable.osho));
+        restaurants.add(new Restaurant(getString(R.string.restnameseven), getString(R.string.restdescseven), R.drawable.buffalobaz));
+        restaurants.add(new Restaurant(getString(R.string.restnameeight), getString(R.string.restdesceight), R.drawable.burgervan));
+        restaurants.add(new Restaurant(getString(R.string.restnamenine), getString(R.string.restdescnine), R.drawable.modelier));
+        restaurants.add(new Restaurant(getString(R.string.restnameten), getString(R.string.restdescten), R.drawable.simbio));
 
         RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorBurger);
         ListView listView = rootView.findViewById(R.id.foodList);

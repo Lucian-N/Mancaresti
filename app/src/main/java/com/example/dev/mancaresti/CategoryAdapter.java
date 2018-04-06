@@ -1,16 +1,15 @@
 package com.example.dev.mancaresti;
 
-import android.support.v4.app.FragmentPagerAdapter;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 
 /**
  * Custom adapter to provide layout for each Restaurant object
  */
 
 public class CategoryAdapter extends FragmentPagerAdapter {
-
 
     private Context restaurantContext;
 

@@ -21,18 +21,17 @@ public class OrientalFragment extends Fragment {
 
         // Create list of Burger Restaurants
         final ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Li Wu", "Vietnamese Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Four Seasons", "Lebanese Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Casa Satya", "Spicy Delights", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Tuk Tuk", "Savor Thailand", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("5 Elemente", "Chinese Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Haveli", "Indian Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Taj", "Lamb treats", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Kunnai", "Thai Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Karishma", "Taste of Pakistan", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Toan's", " Vietnamese Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Long Xuan", "Chinese Food", R.drawable.ic_directions_white_24dp));
-
+        restaurants.add(new Restaurant(getString(R.string.orientalone), getString(R.string.orientaldescone), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientaltwo), getString(R.string.orientaldesctwo), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalthree), getString(R.string.orientaldescthree), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalfour), getString(R.string.orientaldescfour), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalfive), getString(R.string.orientaldescfive), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalsix), getString(R.string.orientaldescsix), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalseven), getString(R.string.orientaldescseven), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalnine), getString(R.string.orientaldescnine), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientaleight), getString(R.string.orientaldesceight), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientalten), getString(R.string.orientaldescten), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.orientaleleven), getString(R.string.orientaldesceleven), R.drawable.ic_directions_white_24dp));
 
         RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorOriental);
         ListView listView = rootView.findViewById(R.id.foodList);

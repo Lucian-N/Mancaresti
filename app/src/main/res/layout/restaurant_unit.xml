@@ -23,7 +23,8 @@ android:orientation="horizontal">
     android:layout_marginTop="16dp"
     android:layout_weight="1"
     android:background="@color/colorPrimaryDark"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/restaurantName"
@@ -34,7 +35,7 @@ android:orientation="horizontal">
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        tools:text="Name" />
+        tools:text="@string/rest_unit_name" />
 
     <TextView
         android:id="@+id/restaurantDescription"
@@ -44,7 +45,7 @@ android:orientation="horizontal">
         android:gravity="top"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/white"
-        tools:text="Description"/>
+        tools:text="@string/rest_unit_desc" />
 </LinearLayout>
 
 <ImageView

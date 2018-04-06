@@ -21,16 +21,15 @@ public class PizzaFragment extends Fragment{
 
         // Create list of Burger Restaurants
         final ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Domino's", "Fast Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Volare", "Pizza Napoletana", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Premiata", "Pizza Milan", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Fabio", "Fast Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Boca Lupo", "Roma Pizza", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Borsalino", "Pizza Napoletana", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Jerry's", "Fast Food", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Resto Aperto", "Padano Pizza", R.drawable.ic_directions_white_24dp));
-        restaurants.add(new Restaurant("Trenta", "Fast Food", R.drawable.ic_directions_white_24dp));
-
+        restaurants.add(new Restaurant(getString(R.string.pizzaone), getString(R.string.pizzadescone), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzatwo), getString(R.string.pizzadesctwo), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzathree), getString(R.string.pizzadescthree), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzafour), getString(R.string.pizzadescfour), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzafive), getString(R.string.pizzadescfive), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzasix), getString(R.string.pizzadescsix), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzaseven), getString(R.string.pizzadescseven), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzaeight), getString(R.string.pizzadesceight), R.drawable.ic_directions_white_24dp));
+        restaurants.add(new Restaurant(getString(R.string.pizzanine), getString(R.string.pizzadescnine), R.drawable.ic_directions_white_24dp));
 
         RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants, R.color.colorPizza);
         ListView listView = rootView.findViewById(R.id.foodList);
